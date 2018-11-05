@@ -102,6 +102,13 @@ std::vector<int> inorder(TreeNode *root)
     }
 }
 
+struct RandomListNode
+{
+  int label;
+  RandomListNode *next, *random;
+  RandomListNode(int x):label(x),next(NULL),random(NULL){}
+};
+
 //不适合所有移除操作
 // TreeNode *remove(TreeNode *root, int val)
 // {
