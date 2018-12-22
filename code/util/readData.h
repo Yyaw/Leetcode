@@ -1,3 +1,6 @@
+#ifndef _LEETCODE_READ_DATA_H_
+#define _LEETCODE_READ_DATA_H_
+
 #include <vector>
 #include <fstream>
 
@@ -26,3 +29,5 @@ public:
         return result;
     }
 };
+
+#endif

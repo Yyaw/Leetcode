@@ -1,5 +1,5 @@
 #include <iostream>
-#include "data.h"
+#include "util/structFunc.h"
 #include "util/readData.h"
 #include <assert.h>
 
@@ -43,5 +43,8 @@ int main(int argc, char **argv)
     assert(argc > 1);
     char *file = argv[1];
     vector<vector<int>> data = ReadData::readIntVec(file);
+    assert(data.size() == 2);
+    TreeNode* tree = s.buildTree(data[0], data[1]);
+    LeetCode::StructFunc::printTreePreeOrder(tree);
     return 0;
 }
